@@ -8,7 +8,7 @@ import (
 
 func TestGetMessage(t *testing.T) {
 	hello := GetMessage()
-	expected := emoji.Sprint("Hello, :world_map:")
+	expected := emoji.Sprint("Hello :world_map:!")
 
 	if hello != expected {
 		t.Errorf("hello %q expected %q", hello, expected)
