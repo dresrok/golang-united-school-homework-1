@@ -3,10 +3,12 @@ package main
 import "testing"
 
 func TestHello(t *testing.T) {
-	hello := Hello()
-	expected := "Hello :world_map:"
+	emoji := ":world_map:"
+	hello := Hello(emoji)
+	expected := "Hello, " + emoji
 
 	if hello != expected {
 		t.Errorf("hello %q expected %q", hello, expected)
 	}
+	t.Log("Success")
 }

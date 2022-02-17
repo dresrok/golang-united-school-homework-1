@@ -4,11 +4,10 @@ import (
 	"github.com/kyokomi/emoji/v2"
 )
 
-func Hello() (hello string) {
-	hello = "Hello :world_map:"
-	return hello
+func Hello(emoji string) string {
+	return "Hello, " + emoji
 }
 
 func main() {
-	emoji.Println(Hello())
+	emoji.Println(Hello(":world_map:"))
 }
