@@ -4,8 +4,8 @@ import (
 	"github.com/kyokomi/emoji/v2"
 )
 
-func Hello() (x string) {
-	hello := "Hello :world_map:"
+func Hello() (hello string) {
+	hello = "Hello :world_map:"
 	return hello
 }
 
